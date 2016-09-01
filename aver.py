@@ -23,7 +23,7 @@ if __name__ == '__main__':
     for line in info:
         (d1,d2,d3,d4,turnover) = line.split()
         #print d1,d2,d3,d4,turnover
-        to_price += (float(d1)+float(d2)+float(d3)+float(d4))/4*float(turnover)/100
+        to_price += (float(d3))*float(turnover)/100
         #print to_price
         rate += float(turnover)
         if rate > 100:
